@@ -8,31 +8,33 @@
        patch h.c <h.diff  ;合并（打补丁到意思）
        patch -R h.c <h.diff   ；-R？
 
-    #N.o 2
-       ## git basics
+    #N.o 2               ：  主要就是能让我们在github上做笔记 下面是就是设置
+       ## git basics     
 
-      1. first create a dir
-       mkdir ggg
+      1. first create a dir    ：在根目录下创建一个目录 叫ggg
+      
+        mkdir ggg
 
-      2. now you MUST cd to this dir
+      2. now you MUST cd to this dir    ： 进到该目录下
 
         cd ggg
 
-      3. initializing this git dir
+      3. initializing this git dir    ：出现.git目录
               git init
 
-    now you can see a `.git` in this dir
+        now you can see a `.git` in this dir
         ls -a
 
-      4. now create a file
+      4. now create a file     ：创建一个文件
 
         vim hello.c
       5. let git knows about this file
 
         git add hello.c
 
-      6. create the first version
-     git commit -a -m "my first version"
+      6. create the first version   ：跟踪hello，c文件  这一步常常少打里“commit”
+
+        git commit -a -m "my first version"
 
     N.o 3
              How to use markdown
