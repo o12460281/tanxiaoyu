@@ -80,4 +80,9 @@
                  :bp # go to previous buffer
                  :bd # delete a buffer
 
-
+             6 小问题：两个不同路径下到文件内容拷贝
+                 先要确定拷贝到的目录下到路径 pwd 
+                 然后在打开内容目录下 :e ~/home/my-note/../b.c
+                 then you can make No5 point
+             7 nod skill:less modify different you can 
+                     git diff
