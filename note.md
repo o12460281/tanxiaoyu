@@ -1,6 +1,6 @@
-s my first the times to make note 
+##this is my first the times to make note 
 
-    N.o 1
+    #N.o 1
        cp h.c h1.c  ;备份
        diff -u h.c h1.c  ;查看文件之间到差别 -u是一个参数
        diff -u h.c h1.c >h.diff ;">"输出内容保存到h.diff
@@ -8,7 +8,7 @@ s my first the times to make note
        patch h.c <h.diff  ;合并（打补丁到意思）
        patch -R h.c <h.diff   ；-R？
 
-    N.o 2
+    #N.o 2
        ## git basics
 
       1. first create a dir
@@ -57,5 +57,10 @@ s my first the times to make note
 
 
 
-       记得把buffer到内容笔记给记上
+       multiple files
+        :ls #see buffers
+        :bn # go to next buffer
+        :bp # go to previous buffer
+        :bd # delete a buffer
+
 
