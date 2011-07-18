@@ -1,4 +1,4 @@
-##this is my first the times to make note 
+##this is note of 3 day
 
     #N.o 1
        cp h.c h1.c  ;备份
@@ -49,15 +49,15 @@
       git remote add origin git@github.com:july-12/tanxiaoyu.git
               firefox myfile.html
 
+##this is note of 4 day
 
      "vim .vimrc"可设置一些有用功能操作
 
        set number
-       set hidden   ”不用保存就能b“
+       set hidden   ”不用保存就能bn bp bd“
 
 
-
-       multiple files
+      multiple files
         :ls #see buffers
         :bn # go to next buffer
         :bp # go to previous buffer
