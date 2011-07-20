@@ -1,7 +1,5 @@
 #this is note of 5 day
 
-aaaaaaaaaaaaaaaaaa  Morning  aaaaaaaaaaaaaaaaaaaaa
-
 ##No.1  peter talk the development of langridge 
       1 计算机语言
       2 汇编语言
@@ -35,7 +33,6 @@ aaaaaaaaaaaaaaaaaa  Morning  aaaaaaaaaaaaaaaaaaaaa
         好书 " k&R  c progaming "  
         http://tldp.org/LDP/Bash-Beginners-Guide/html/
                       
-aaaaaaaaaaaaaa    afternoon     aaaaaaaaaaaaaaa
 
 ##No.4    重建一个Repository    
             1 首先在github网站上新建一个项目repository
