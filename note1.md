@@ -31,4 +31,20 @@
            0 success,1 fail
         好书 " k&R  c progaming "  
         http://tldp.org/LDP/Bash-Beginners-Guide/html/
-      
+
+##No.4    重建一个Repository    
+            1 首先在github网站上新建一个项目repository
+
+            2 项目到name必须与本地到工程名相同
+
+            3  cd txy-projec
+	       ls
+	 1036  git init
+	 1604  ls -a
+	 1605  git add hello.c
+	 1606  git commit -a -m "first"
+	 1607  tig
+	 1608  git push   ;到了这一步还是不能push的
+	 1609  git remote add origin git@github.com:july-12/txy-project.git
+	 1610  git push origin master  然后重建一个Repository就完成了
+            

@@ -86,3 +86,30 @@
                  then you can make No5 point
              7 nod skill:less modify different you can 
                      git diff
+
+     No.4
+		  Global setup:
+
+	 Set up git
+	  git config --global user.name "Your Name"
+	  git config --global user.email 370403679@163.com
+		
+
+	Next steps:
+
+	  mkdir sa
+	  cd sa
+	  git init
+	  touch README
+	  git add README
+	  git commit -m 'first commit'
+	  git remote add origin git@github.com:july-12/sa.git
+	  git push -u origin master
+	      
+
+	Existing Git Repo?
+
+	  cd existing_git_repo
+	  git remote add origin git@github.com:july-12/sa.git
+	  git push -u origin master
+      
