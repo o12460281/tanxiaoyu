@@ -52,7 +52,8 @@
  ##No.5    1  在根目录下vim .gitconfig中添加
                [core] 
                    editor =  vim      
-           2  在note目录下作笔记时修改vim 中到文档后
+           2    允许做多行操作
+                在note目录下作笔记时修改vim 中到文档后
                 git commit -a   ;  是为了能够更清晰到给所修改内容到描述
                                    也就是“message”
             注意*：不允许在git到项目里在建有文件夹   
