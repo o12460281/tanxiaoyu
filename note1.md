@@ -29,4 +29,6 @@
                   return 0;     
       }
            0 success,1 fail
-        好书 " k&R  c progaming "
+        好书 " k&R  c progaming "  
+        http://tldp.org/LDP/Bash-Beginners-Guide/html/
+      
