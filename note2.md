@@ -24,3 +24,17 @@
           yy-----to cope current line
           dd-----to cut the current line
           p------to paste
+
+#No.3      vim .bashrc
+           use aaa replace sudo apt-get install
+           alias  install="sudo apt-get install" ;wq 
+           source .bashrc ;重读文件  
+
+#No.4     install two soflword
+          fortune    cowsay
+          fortune | cowsay
+          funny! ya hah: (mkdir aaa,cd aaa,touch I love yz,ls |cowsay)
+#No.5    delete a file we don‘t want to get
+          git rm  trash
+          git commit -a
+          git push             
