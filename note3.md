@@ -47,4 +47,31 @@
                
             8 copy something from service
                scp peter@192.168.1.17:~/hihihi .   ;"s"mean pass ssh this gate
-            9 service ssh status     ;查看ssh状态是关闭还是打开
+            9 service ssh status     ;查看ssh状态是关闭还是打
+
+#P. M  note   
+    No.1          
+              other setting  in  vim .vimrc:    usefull
+
+              man ,ss :set spell<cr>       :    been on eror
+              
+              map <tab> :bn<cr>            :    use<tab>replaece bn
+
+              imap jj <esc>          :jump to Normal Mode from Insert
+
+              map ,, :q<cr>
+                                
+              ctrl-n  补齐 in fun 
+
+    No.2      
+              intall ctags
+              ctags hello.c
+              ls
+              vim hello.c
+              ctrl-]          ; 跳转到函数定义的地方
+              ctrl-t          ；reture
+      //Next times use tags you should remove priviou tags then ctags hello.c
+  
+    No.3   
+              将main函数和子函数 分开写下：
+              没掌握好 要补上
