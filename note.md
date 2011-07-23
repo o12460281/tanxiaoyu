@@ -73,6 +73,26 @@
                  set number
                  set hidden   ”不用保存就能bn bp bd“
 
+               "vim .gitconfig"  
+		[user]
+		name = Peter Wang
+		email = happypeter1983@gmail.com
+		[core]
+		editor = vim
+		[alias]
+		    ci = commit -a -v
+		    co = checkout
+		    st = status
+		    br = branch
+		    throw = reset --hard HEAD
+		    throwh = reset --hard HEAD^
+		[color]
+		    ui = true
+
+		[commit]
+		template = ./.commit-template
+		[push]
+		default = current
 
              5 multiple files
                  :ls #see buffers
@@ -112,4 +132,139 @@
 	  cd existing_git_repo
 	  git remote add origin git@github.com:july-12/sa.git
 	  git push -u origin master
+         
+##this is note of 5 day
+
+#No.1  peter talk the development of langridge 
+      1 计算机语言
+      2 汇编语言
+      3 C语言
+      4 高级语言
+
+#No.2  编译 in vim
+     1.gcc -wall b.c
+
+     2.:w   :sh    "you have openned a bash"
+       exit  ctrl+d
+
+     3. 撤销操作
+        在普通模式下按    u ；是撤销上一步到操作
+                          ctrl+r   ；回到上一步撤销到地方
+
+     4.gcc -S b.c
+   
+#No.3 about return ?
+        use echo $? 
+      {
+            if i = 1;
+            if (i != 1 );
+             { 
+                  return 1;
+                 
+             }
+                  return 0;     
+      }
+           0 success,1 fail
+        好书 " k&R  c progaming "  
+        http://tldp.org/LDP/Bash-Beginners-Guide/html/
+                      
+
+#No.4      
+    How to use Git make note
+   
+    first:    Register account:o12460281
+ 
+    second:   Add ssh key
+             1 open Account Settings >>click SSH Pulic keys
+             2 open terminal (终端)
+                cd
+                pwd
+                mv .ssh/akaedu-ssh    :don‘t do this way if no -ssh
+                ssh-keygen
+                cd .ssh
+                ls
+                vim id_rsa.pub
+              3 you should copy code to web. now you can add keys
+                    :why add key
+                    :beauce you can use git to make note on website
+                     you know Git is a very good for managing you note
+              4 you can skin /tanyu/note.md to git push
+                 git ... “your name” 
+                 git ... “..@...com” 
+                 mkdir <file> 
+                 cd <file>
+                 git init
+                 vim a.c
+                 git add a.c
+                 git remote add origin git@github.com:o12460281/<file>.git
+                 git push -u origin master
+                 git commit -a -m "first"
+                 tig
+                 git push
+               OK now you have seccessed make note to github
+                
+                
+            重建一个Repository    
+            1 首先在github网站上新建一个项目repository
+
+            2 项目到name必须与本地到工程名相同
+
+            3  cd txy-projec
+	       ls
+	 1036  git init
+	 1604  ls -a
+	 1605  git add hello.c
+	 1606  git commit -a -m "first"
+	 1607  tig
+	 1608  git push   ;到了这一步还是不能push的
+	 1609  git remote add origin git@github.com:july-12/txy-project.git
+	 1610  git push origin master  然后重建一个Repository就完成了
+#No.5    1  在根目录下vim .gitconfig中添加
+               [core] 
+                   editor =  vim      
+           2    允许做多行操作
+                在note目录下作笔记时修改vim 中到文档后
+                git commit -a   ;  是为了能够更清晰到给所修改内容到描述
+                                   也就是“message”
+            注意*：不允许在git到项目里在建有文件夹  
+ 
+##this is my note of 6 day
+
+#No.1     we learn how to 使用下载安装插件 snipmate
+            fine this plugins(插件)	in google or baidu
+            download  it
+       cope unzip snipMate.zip -d ~/.vim (if no unzip you should sodu)                        cd
+	      ls
+	      cd .vim/
+	      ls       ;you will see that snipmate file,and now you can use it
+	      cd
+	      vim a.c
+           
+          # added for test
+            snippet dog<tab>
+            tab     I love dogs   "you must  tab 补齐"
+           now you can try to use "dog"    funny  oha!
+
+                 snippet dog
+                         I ${1:love} dogs
+	        snippet inc
+	        	#include <${1:stdio}.h>${2}  ;you can try 光标到变幻方便修改字符
       
+#No.2     say "hello"  10 times with vim skills
+          yy-----to cope current line
+          dd-----to cut the current line
+          p------to paste
+
+#No.3      vim .bashrc
+           use aaa replace sudo apt-get install
+           alias  install="sudo apt-get install" ;wq 
+           source .bashrc ;重读文件  
+
+#No.4     install two soflword
+          fortune    cowsay
+          fortune | cowsay
+          funny! ya hah: (mkdir aaa,cd aaa,touch I love yz,ls |cowsay)
+#No.5    delete a file we don‘t want to get
+          git rm  trash
+          git commit -a
+          git push             
