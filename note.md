@@ -133,15 +133,15 @@
 	  git remote add origin git@github.com:july-12/sa.git
 	  git push -u origin master
          
-##this is note of 5 day
+#this is note of 5 day
 
-#No.1  peter talk the development of langridge 
+    No.1  peter talk the development of langridge 
       1 计算机语言
       2 汇编语言
       3 C语言
       4 高级语言
 
-#No.2  编译 in vim
+    No.2  编译 in vim
      1.gcc -wall b.c
 
      2.:w   :sh    "you have openned a bash"
@@ -153,7 +153,7 @@
 
      4.gcc -S b.c
    
-#No.3 about return ?
+    No.3 about return ?
         use echo $? 
       {
             if i = 1;
@@ -169,12 +169,12 @@
         http://tldp.org/LDP/Bash-Beginners-Guide/html/
                       
 
-#No.4      
-    How to use Git make note
+    No.4      
+     How to use Git make note
    
-    first:    Register account:o12460281
+     first:    Register account:o12460281
  
-    second:   Add ssh key
+     second:   Add ssh key
              1 open Account Settings >>click SSH Pulic keys
              2 open terminal (终端)
                 cd
@@ -219,7 +219,8 @@
 	 1608  git push   ;到了这一步还是不能push的
 	 1609  git remote add origin git@github.com:july-12/txy-project.git
 	 1610  git push origin master  然后重建一个Repository就完成了
-#No.5    1  在根目录下vim .gitconfig中添加
+
+    No.5    1  在根目录下vim .gitconfig中添加
                [core] 
                    editor =  vim      
            2    允许做多行操作
@@ -228,9 +229,9 @@
                                    也就是“message”
             注意*：不允许在git到项目里在建有文件夹  
  
-##this is my note of 6 day
+#this is my note of 6 day
 
-#No.1     we learn how to 使用下载安装插件 snipmate
+    No.1     we learn how to 使用下载安装插件 snipmate
             fine this plugins(插件)	in google or baidu
             download  it
        cope unzip snipMate.zip -d ~/.vim (if no unzip you should sodu)                        cd
@@ -250,21 +251,21 @@
 	        snippet inc
 	        	#include <${1:stdio}.h>${2}  ;you can try 光标到变幻方便修改字符
       
-#No.2     say "hello"  10 times with vim skills
+    No.2     say "hello"  10 times with vim skills
           yy-----to cope current line
           dd-----to cut the current line
           p------to paste
 
-#No.3      vim .bashrc
+    No.3      vim .bashrc
            use aaa replace sudo apt-get install
            alias  install="sudo apt-get install" ;wq 
            source .bashrc ;重读文件  
 
-#No.4     install two soflword
+    No.4     install two soflword
           fortune    cowsay
           fortune | cowsay
           funny! ya hah: (mkdir aaa,cd aaa,touch I love yz,ls |cowsay)
-#No.5    delete a file we don‘t want to get
+    No.5    delete a file we don‘t want to get
           git rm  trash
           git commit -a
           git push             
