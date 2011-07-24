@@ -104,8 +104,8 @@
                            * master
                              one_file_com
                                two_file_com
-            git checkout 75ef11de.. -b one_file_state
-            git br -D one_file_state
+            git checkout 75ef11de.. -b one_file_state ;creat
+            git br -D one_file_state                  ;delate
             git checkout master>one_file_state>branch>master
           
                           git checkout master          
@@ -136,4 +136,33 @@
     No.1   git add .
 
     No.2   git commit -a -v
-           test "-v" is a nice have       
+           test "-v" is a nice have      
+           vim .gitconfig
+            st = status
+            br = branch
+            ci = commit -a -v
+    
+    No.3   which ls(git..)   ;where are you?
+
+           locate vimrc   ;匹配文件名查找，但只能找到老文件，对新文件找不到
+                           在自己到数据库里查找，而不是对整个硬盘到查找，一天
+                           更新一次吧
+           sudo updatedb      ；手动更新
+
+           find xxx           ;显示文件夹中到所有文件
+           find xxx|grep git  ;找出xxx文件夹中git这个文件  “grep字符匹配”
+           "|":管道符前 “find xxx”到输出作为“grep git”到输入
+
+            ps aux              :report a snapshot all of the current processes.
+            ps aux | grep firefox ;report firefox processes
+            kill 2003             ;close firefox processes
+            kill -9 2003          ;force close firefox processes
+
+            ls|grep tig           ;筛选
+
+    No.4    about xxx
+            make  必须在含有makefile的文件下执行
+                  增加一个二进制文件
+            sudo make install
+            xxx "word"
+                  
