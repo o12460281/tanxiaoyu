@@ -14,15 +14,15 @@
                 " can  know further vim seting. link to
 		  https://github.com/happypeter/peter-vim/blob/master/vimrc"
                4 insert:
-         		 ctrl-t
+		 ctrl-t
                  ctrl-d             ;auto对齐 系统自带到
-               5 vim:
-              :h @  --> 
-              :h i_CTRL-t(<tab>swich T)
+	       5 vim:
+ 		  :h @  --> 
+		  :h i_CTRL-t(<tab>swich T)
                   exit::bd
                6 i_CTRL_X_K
                  set dictionary+=~/.vim/dict/simple
-		         i_CTRL_X_F
+		 i_CTRL_X_F
                  set dictionary-=/usr/share/dict/words
                  dictionary+=/usr/share/dict/words
 	
