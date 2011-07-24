@@ -73,6 +73,67 @@
       //Next times use tags you should remove priviou tags then ctags hello.c
   
     No.3   
-              将main函数和子函数 分开写下：
-              没掌握好 要补上
+             内容放在othern.c里面
 
+#this is my note of 8 day
+## A.M
+    No.1
+          git revert
+            V1:the initinal commit
+
+            V2:now touch a trash
+               git add trash
+               git commit -a -m"test revert"
+               git push
+
+            V3.1:git throw
+                 git commit -a
+                 git push          ;==>rejeck
+
+            V3.2:git pull (origin master)  ;get trash from gitbub.com
+                 git revert HEAD
+                 tig               ;you will find Revert "test revert"
+                 git push          ;==>succeed
+            conclude:a trash file push on net just can use git revert
+                     don‘t use git throw
+    No.2
+          定位历史
+            git checkout 75ef11de..(版本号)   ;get back a file state
+            git checkout master               ;return
+            git branch    ;you will find
+                           * master
+                             one_file_com
+                               two_file_com
+            git checkout 75ef11de.. -b one_file_state
+            git br -D one_file_state
+            git checkout master>one_file_state>branch>master
+          
+                          git checkout master          
+            ____________ <==========
+            |   _____   |
+            |  |_____|  |
+            |    _____  |   
+            |  |_____|  | by git checkout 75ef11ed.. -b one_file_state
+            |   _____   |
+            |  |_____|  | just git checkout one_file_state
+            |    _____  | ===========>          
+            |  |_____|  |                 
+            |           |      __________
+            |   _____   |     | ______  |        
+            |  |_____|  |     || ______||       
+            |           |     |         |        
+            |___________|     | ________|                   
+                      ========>
+                      git checkout <版本号>            
+     
+          onepoint:cp file from peter PC
+               scp peter@192.168.1.20:~/git.mov .
+               install mplayer
+               mplayer git.mov 
+
+## P.M
+
+    No.1   git add .
+
+    No.2   git commit -a -v
+           test "-v" is a nice have       
