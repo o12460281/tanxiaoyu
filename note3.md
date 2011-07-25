@@ -21,10 +21,10 @@
 		         :h i_CTRL-t(<tab>swich T)
                   exit::bd
                6 i_CTRL_X_K
-                 set dictionary+=~/.vim/dict/simple
+                //// set dictionary+=~/.vim/dict/simple
 	        	 i_CTRL_X_F
-                 set dictionary-=/usr/share/dict/words
-                 dictionary+=/usr/share/dict/words
+                //// set dictionary-=/usr/share/dict/words
+                //// dictionary+=/usr/share/dict/words
 	
                Have Peter‘s Conf:	
 			cd  #goto your $HOME
@@ -149,9 +149,9 @@
                            更新一次吧
            sudo updatedb      ；手动更新
 
-           find xxx           ;显示文件夹中到所有文件
-           find xxx|grep git  ;找出xxx文件夹中git这个文件  “grep字符匹配”
-           "|":管道符前 “find xxx”到输出作为“grep git”到输入
+           find <file>           ;显示文件夹中到所有文件
+           find <file>|grep git  ;找出file中git这个文件  “grep字符匹配”
+           "|":管道符前 “find file”到输出作为“grep git”到输入
 
             ps aux              :report a snapshot all of the current processes.
             ps aux | grep firefox ;report firefox processes
@@ -159,8 +159,10 @@
             kill -9 2003          ;force close firefox processes
 
             ls|grep tig           ;筛选
+            gitk
 
     No.4    about xxx
+            install two 包
             make  必须在含有makefile的文件下执行
                   增加一个二进制文件
             sudo make install
